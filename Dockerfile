@@ -1,4 +1,4 @@
 FROM openjdk:17
 Expose 8081
-ADD target/customer-service.jar
+ADD target/customer-service.jar customer-service.jar
 ENTRYPOINT ["java","-jar","/customer-service.jar"]
